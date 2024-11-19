@@ -1,1 +1,0 @@
-# global-solution_green-energy
