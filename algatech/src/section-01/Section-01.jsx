@@ -1,20 +1,16 @@
 import React from 'react';
-import Image from './img/background-section1.png';  
+import "./Section-01.css" 
 
 const Section01 = () => {
   return (
-    <section
-      className="vh-100 bg-image"
-      style={{
-        backgroundImage: `url(${Image})`,
-        backgroundSize: 'cover',      
-        backgroundPosition: 'center', 
-        backgroundRepeat: 'no-repeat' 
-      }}
-    >
-      <div className="container">
-        <h1>Explore o poder das Algas</h1>
-        <p>Texto aqui...</p>
+    <section className='container-potencial'>
+      <div className='ctn-explicacao'>
+        <h1>Harnessing </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum praesentium officiis iste molestiae eum quo itaque quasi delectus alias voluptates accusamus adipisci cupiditate est ipsam voluptate quae, similique laborum aspernatur!</p>
+        <div className='btn-potencial'>
+          <button>Explore now</button>
+          <button>Learn More</button>
+        </div>
       </div>
     </section>
   );
