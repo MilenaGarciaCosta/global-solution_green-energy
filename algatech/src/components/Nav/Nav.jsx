@@ -39,8 +39,7 @@ const Navbar = () => {
     <div className='container-conhecer'>
       <div className='btn-conhecer'>
       <h1 id='explore'>Explore o poder das Algas</h1>
-      <p id='explore'>Texto aqui...</p>
-      <button id='btn-co'>Venha Explorar</button>
+      <button id='btn-co'>Comece agora</button>
       </div>
     </div>
 </div>
