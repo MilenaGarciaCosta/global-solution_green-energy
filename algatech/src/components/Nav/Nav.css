@@ -1,30 +1,137 @@
-#logo{
-    width: 60px;
-    height: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+:root {
+  --fonte-Josefin: "Josefin Sans", sans-serif;
+  --fonte-Comforta: "Comfortaa", sans-serif;
+  --fonte-Edu: "Edu AU VIC WA NT Pre", cursive;
+  --branco: #fbfffd;
+  --verde-escuro: #07674c;
+  --preto: #1b1b1b;
 }
 
-.container-conhecer{
-    width: 100%;
-    height: 100%;
+body {
+  background-color: var(--preto);
 }
 
-.btn-conhecer{
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+/* Este fundo é da navbar */
+#img1 {
+  position: absolute;
+  background-image: url("img/img-fnd.jpeg");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
+  opacity: 0.7;
 }
 
-#btn-co{
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    background-color: #07674c;
-    color: white;
-    border: none;
-    font-family: var(--fonte-Comforta);
+.navbar {
+  padding: 20px;
+  margin-bottom: -40px;
+}
+
+#explore {
+  color: var(--branco);
+  font-size: 50px;
+  font-family: var(--fonte-Josefin);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+#subtitulo {
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: var(--branco);
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+#logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.container-conhecer {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-conhecer {
+  font-size: 20px;
+  width: 100%;
+  height: 75vh;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-co {
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  border: none;
+  font-family: var(--fonte-Comforta);
+}
+
+.containerNav {
+  height: 100vh;
+}
+
+.nav-link,
+.dropdown-item {
+  color: var(--branco);
+  font-family: var(--fonte-Comforta);
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: var(--verde-escuro);
+}
+
+.dropdown-item:hover {
+  background-color: #07674c3d;
+  color: var(--verde-escuro);
+}
+
+.dropdown-item {
+  color: var(--verde-escuro);
+  font-size: 13px;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  color: var(--branco) !important;
+}
+
+.dropdown-menu {
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url(img/menu-svg.svg);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler{
+    border-color: var(--branco);
+}
+
+@media (max-width: 991px){
+    .nav-link{
+        text-align: right;
+    }
 }
