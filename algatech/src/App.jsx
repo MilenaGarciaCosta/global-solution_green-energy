@@ -1,19 +1,18 @@
 
 import React from 'react';
-import Nav from './components/Nav/Nav';
-import Section01 from './section-01/Section-01';
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav/Nav.jsx';
+import Footer from './components/Footer/Footer.jsx'
 
 
 function App() {
-  
-
   return (
     <>
       <Nav/>
-      <Section01/>
+      <Outlet/>
+      <Footer/>
     </>
-      
   )
 }
 
-export default App
+export default App;
