@@ -1,6 +1,5 @@
-import React from "react";
-import Logo from "../Nav/img/alga-logo.png";
-import "../Nav/Nav.css";
+import Logo from "../img/menu-svg.svg";
+import "../css/Nav.css";
 
 const Navbar = () => {
   return (
