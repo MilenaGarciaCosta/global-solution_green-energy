@@ -1,85 +1,176 @@
-.container-potencial{
-    width: 100%;
-    height: 500px;
-    background-color: #031c1d;
+.container-potencial {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #031c1d;
 }
 
-.ctn-explicacao{
-    width: 50%;
-    height: 100%;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    padding: 80px;
+.ctn-explicacao {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 80px;
 }
 
-.container-potencial{
-    display: flex;
+.ctn-explicacao h1 {
+  font-family: var(--fonte-Josefin);
+  margin-left: -145px;
 }
 
-.ctn-image{
-    width: 50%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
+.btn-potencial button {
+  font-family: var(--fonte-Comforta);
+  font-size: 17px;
 }
 
-.btn-potencial{
-    width: 100%;
-    display: flex;
-    align-items: end;
-    height: 100px;
-    gap: 20px;
+.container-potencial {
+  display: flex;
 }
 
-
-
-#btn-explore{
-    width: 180px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: #b42c13;
-    color: white;
-    font-size: 20px;
-    border: 1px solid white;
+.ctn-image {
+  width: 50%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
-#btn-learn{
-    width: 180px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: #052122;
-    border: 1px solid rgba(255, 255, 255, 0.337);
-    color: white;
+.btn-potencial {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  height: 100px;
+  gap: 20px;
 }
 
-#img-agua{
-    width: 500px;
+#btn-explore {
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #b42c13;
+  color: white;
+  border: 1px solid white;
 }
 
-#text-alga{
-    color: gray;
+#btn-learn {
+  width: 180px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #052122;
+  border: 1px solid rgba(255, 255, 255, 0.337);
+  color: white;
+}
+
+#img-agua {
+  width: 500px;
+}
+
+#text-alga {
+  color: gray;
+  font-family: var(--fonte-Comforta);
 }
 
 /* Beneficios */
 
-.container-Beneficios{
-    width: 100%;
-    height: 500px;
+.container-Beneficios {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--branco);
 }
 
-#img-bolha{
-position: absolute;
+#img-bolha {
+  position: absolute;
   background-image: url("../img/fundoBolha.jpg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   z-index: -100;
   opacity: 0.6;
-  
 }
+
+.beneficiosItens {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--fonte-Comforta);
+  justify-content: center;
+  margin-top: 100px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.beneficiosItens h2 {
+  font-size: 25px;
+  width: 300px;
+}
+
+.containerBeneficios {
+  width: 100%;
+  text-align: center;
+}
+
+.container-Beneficios h1 {
+  font-family: var(--fonte-Josefin);
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.containerPoderDaAlga {
+  height: 100vh;
+  background-color: var(--branco);
+}
+
+.containerPoderDaAlga img {
+  height: 65vh;
+}
+
+.informacoesCelulaAgua {
+  margin-left: 100px;
+}
+
+.informacoesCelulaAgua h1 {
+  color: var(--verde-escuro);
+  font-family: var(--fonte-Josefin);
+  margin-bottom: 20px;
+  width: 550px;
+  font-size: 60px;
+}
+
+.informacoesCelulaAgua p {
+  color: #3a4849;
+  font-family: var(--fonte-Comforta);
+  max-width: 500px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.containerPoderDaAlga {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoesPoderDaAlga {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.botoesPoderDaAlga p {
+  height: 100%;
+  width: 100px;
+  margin-top: 30px;
+}
+

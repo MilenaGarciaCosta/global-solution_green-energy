@@ -1,4 +1,4 @@
-import Logo from "../img/menu-svg.svg";
+import Logo from "../img/alga-logo.png";
 import "../css/Nav.css";
 
 const Navbar = () => {
