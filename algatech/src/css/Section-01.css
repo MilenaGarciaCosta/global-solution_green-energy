@@ -159,6 +159,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 
 .botoesPoderDaAlga {
@@ -174,3 +175,33 @@
   margin-top: 30px;
 }
 
+.containerSustentabilidade {
+  background-color: #031c1d;
+}
+
+.informacoesSustentabilidade {
+  color: var(--branco);
+}
+
+.informacoesSustentabilidade h1 {
+  font-family: var(--fonte-Josefin);
+  width: 500px;
+}
+
+.informacoesSustentabilidade p {
+  font-family: var(--fonte-Comforta);
+  color: #7b9496;
+  max-width: 500px;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.containerSustentabilidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 200px;
+    flex-wrap: wrap;
+}

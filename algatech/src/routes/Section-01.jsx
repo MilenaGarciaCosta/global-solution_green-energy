@@ -1,6 +1,7 @@
 import "../css/Section-01.css";
 import agua from "../img/agua-imagem1.png";
 import CelulaAlga from "../img/imagem-alga1.png";
+import algaSustentabilidade from "../img/imagem-alga3.png"
 
 const Section01 = () => {
   return (
@@ -57,6 +58,22 @@ const Section01 = () => {
             <p>Sustentabilidade em ação</p>
           </div>
         </div>
+      </section>
+
+      <section className="containerSustentabilidade">
+        <div className="informacoesSustentabilidade">
+          <h1>Capacitação para uma economia sustentável </h1>
+          <p>
+            Junte-se a nós numa viagem de gestão ambiental à medida que
+            revelamos as capacidades notáveis das tecnologias baseadas em algas.
+            Explore estudos de caso, aceda à nossa calculadora de poupanças
+          </p>
+          <div className="btn-potencial">
+            <button id="btn-explore">Explore mais</button>
+            <button id="btn-learn">Comece aqui</button>
+          </div>
+        </div>
+        <img src={algaSustentabilidade} alt="" />
       </section>
     </>
   );
