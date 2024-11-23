@@ -18,11 +18,11 @@
   align-items: center;
   color: white;
   padding: 80px;
+  flex-wrap: wrap-reverse;
 }
 
 .ctn-explicacao h1 {
   font-family: var(--fonte-Josefin);
-  margin-left: -145px;
 }
 
 .btn-potencial button {
@@ -196,12 +196,110 @@
   margin-bottom: 30px;
 }
 
-.containerSustentabilidade{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    gap: 200px;
-    flex-wrap: wrap;
+.containerSustentabilidade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 200px;
+  flex-wrap: wrap;
 }
+
+.containerCadastro h1 {
+  color: var(--branco);
+  font-family: var(--fonte-Josefin);
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.containerCadastro {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleCad {
+  padding-top: 20px;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -10;
+  background-image: url('../img/fundoCadastro.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  opacity: 0.4;
+}
+
+.groupCadastro {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 2px;
+  border-image: linear-gradient(to right, #052122, #076132);
+  border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: var(--branco);
+}
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+

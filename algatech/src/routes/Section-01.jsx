@@ -1,12 +1,27 @@
+import { useState } from 'react';
 import "../css/Section-01.css";
 import agua from "../img/agua-imagem1.png";
 import CelulaAlga from "../img/imagem-alga1.png";
 import algaSustentabilidade from "../img/imagem-alga3.png"
+import { validateEmail, validateCPF } from '../script/cadastro.js';
 
 const Section01 = () => {
+  const [email, setEmail] = useState('');
+  const [cpf, setCpf] = useState('');
+
+  const handleSubmit = () => {
+    if (!validateEmail(email)) {
+      alert('Email incorreto!');
+    } else if (!validateCPF(cpf)) {
+      alert('CPF incorreto!');
+    } else {
+      alert('Obrigada pelo suporte!');
+    }
+  };
+
   return (
     <>
-      <section className="container-potencial">
+      <section className="container-potencial" id="potencial">
         <div className="ctn-explicacao">
           <h1>Aproveitando o Potencial das Algas </h1>
           <p id="text-alga">
@@ -74,6 +89,25 @@ const Section01 = () => {
           </div>
         </div>
         <img src={algaSustentabilidade} alt="" />
+      </section>
+
+      <section className="containerCadastro">
+        <div className="bg-img"></div>
+        <h1 className="titleCad">Fique por dentro das atualizações do projeto.</h1>
+        <h1>Colabore com a economia sustentável.</h1>
+        <div className="groupCadastro">
+          <div class="form__group field">
+            <input type="text" value={email} class="form__field" required="" placeholder="nome" onChange={(e) => setEmail(e.target.value)}></input>
+            <label for="name" class="form__label">Email</label>
+          </div>
+
+          <div class="form__group field">
+            <input type="text" value={cpf} class="form__field" placeholder="cpf" required="" onChange={(e) => setCpf(e.target.value)}></input>
+            <label for="name" class="form__label">CPF</label>
+          </div>
+
+          <button id="btn-explore" type="submit" onClick={handleSubmit}>Enviar</button>
+        </div>
       </section>
     </>
   );
